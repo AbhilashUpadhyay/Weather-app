@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- weatherapp -->
+
+    <div class="container-main" id="mainCont">
+      <div class="left" id="left-sec">
+
+
+      </div>
+<!-- 
+      <div
+        class="row d-flex justify-content-center align-items-center h-50 w-40 card-main" > -->
+        <div class="col-md-40 col-lg-20 col-xl-20">
+          <div class="card" style="color: #4b515d; ">
+            <div class="card-body p-4">
+              <!-- input -->
+              <div class="input-group rounded gap-2">
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                  id="cityName"
+                  class="input-city"
+                />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fa-solid fa-magnifying-glass "></i>
+                </span>
+              </div>
+
+              <div class="d-flex">
+                <h6 class="flex-grow-1" id="Name" >Warsaw</h6>
+                
+              </div>
+              <div class="globe">
+                <i  class="fa-solid fa-globe" style="color: #868b94"></i>
+                <span class="ms-1" id="country"> PL </span>
+              </div>
+
+              <div class="d-flex flex-column text-center mt-5 mb-4">
+                <h6
+                  class="temp"
+                  class="display-4 mb-0 "
+                  style="color: #1c2331 "
+                >
+                  <span id="cityTemp">13</span>°C
+                </h6>
+                <span class="small" style="color: #868b94" id="weather" >Stormy</span>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div class="flex-grow-1" style="font-size: 1rem">
+                  <div>
+                    <i class="fas fa-wind fa-fw" style="color: #868b94"></i>
+                    <span class="ms-1" id="wind"> 40 km/h </span>
+                  </div>
+                  <div>
+                    <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                    <span class="ms-1" id="humidity"> 84% </span>
+                  </div>
+                  <div class="temp-max">
+                    <i class="fa-solid fa-temperature-arrow-up" style="color: #868b94"  ></i>
+                    <span class="ms-1" id="max-temp"> 23°C </span>
+                  </div>
+                
+                </div>
+                <div>
+
+                    <div id="imgData">
+                       
+                    </div>
+                  
+                   
+                        
+                
+                        
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <!-- end -->
+
+    <div id="demo">
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

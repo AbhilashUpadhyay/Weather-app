@@ -1,0 +1,73 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(Images/hero2.jpg) no-repeat center center/cover;
+    transition: 0.5s ease-in;
+}
+.left{
+    width: 25vw;
+    height: 70vh;
+    background: url(Images/side3.jpg) no-repeat center center/cover;
+    border-radius: 2px;
+    opacity: 0.9;
+    transition: 0.5s ease-in;
+}
+.card{
+    width: 28vw;
+    height: 70vh;
+    border-radius: 35px;
+    opacity: 0.8;
+    /* border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; */
+
+}
+
+#search-addon{
+    
+    cursor: pointer;
+}
+.input-group{
+    margin-bottom: 20px;
+}
+.temp{
+    font-size: 2.2rem;
+}
+#imgData{
+    width: 10rem;
+    height: 10rem;
+    opacity: 1;
+    background :url(https://openweathermap.org/img/wn/11d@2x.png) no-repeat center center/contain;
+}
+#Name{
+
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width :600px ){
+    .card{
+        width: 80vw;
+        border-radius: 35px;
+        height: 50vh;
+    }
+    .left{
+        display: none;
+    }
+}
+.temp-max{
+    position: relative;
+    left: 3px;
+    gap: 15px;
+}
+.globe{
+    position: relative;
+    left: 2px;
+}
