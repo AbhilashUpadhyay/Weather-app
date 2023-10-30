@@ -1,5 +1,4 @@
 
-
 //Element Target 
 
 let userInput =document.getElementById('cityName');
@@ -37,7 +36,7 @@ setInterval(() => {
 
 var setValue =(data)=>{
     HeroName.innerText = data.name;
-    cityTemp.innerText =data.main.temp;
+    cityTemp.innerText =data.main.temp + '°C';
     CityWeather.innerText =data.weather[0].main;
     wind.innerText = Math.round(data.wind.speed *3.6 )  + '  km/h'  ;
     humidity.innerText =data.main.humidity+'%' ;
@@ -84,4 +83,3 @@ let searchButton = document.getElementById('search-addon').addEventListener('cli
     });
     
 })
-
